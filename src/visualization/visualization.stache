@@ -1,0 +1,86 @@
+<can-import from="my-app/models/vizData" />
+ <can-import from="bit-tabs/unstyled" />
+ 	 <can-import from="bootstrap/less/bootstrap.less!" />
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">RBC Universal Risk Viewer</a>
+    </div>
+   
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span>Welcome User</a></li>
+      <li style="border-left:1px"></li>
+      <li><a href="#"><span class="glyphicon glyphicon-bell"></span></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span></a></li>
+          <li><a href="{{routeUrl page='home'}}"><span class="glyphicon glyphicon-off"></span></a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+<bit-tabs tabs-class="nav nav-tabs">
+      <bit-panel title="Home">
+       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" >
+
+<!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" style="width: 70%;
+    margin: auto;">
+    <div class="item active">
+    <div style="border:1px solid black;background:gray;width:200px;height:200px" >
+   <select class="selectpicker show-menu-arrow right">
+  <option>Pause</option>
+  <option>Cancel</option>
+  <option>View Details</option>
+  <option>Edit/Update</option>
+</select>
+<div>RISK API Report Delta Service</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-success " role="progressbar"
+  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+    40% Complete (success)
+  </div>
+</div>
+
+    </div>
+    </div>
+    <div class="item">
+     <p>DEF</p>
+    
+     
+    </div>
+    <div class="item">
+    <p>GHI</p>
+    
+     
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+      </bit-panel>
+      <bit-panel title="RiskViewer">
+        <p>StealJS provides the infrastructure.</p>
+      </bit-panel>
+    </bit-tabs>
+
+
+
+
+

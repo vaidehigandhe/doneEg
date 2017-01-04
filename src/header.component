@@ -1,0 +1,35 @@
+<can-component tag="app-header">
+  <style type="less">
+    display: block;
+    
+    p { font-weight: bold; }
+  </style>
+  <template>
+    <nav class="uk-navbar">
+    <a href="" class="uk-navbar-brand">RBC Risk Viewer</a>
+    
+    
+    <div class="uk-navbar-content uk-navbar-flip">
+        <ul class="uk-navbar-nav">
+            <li><i class="fa fa-question-circle" aria-hidden="true"></i></li>
+
+        </ul>
+   
+    
+    </div>
+    <a href="" class="uk-navbar-toggle"></a>
+</nav>
+  </template>
+  <script type="view-model">
+    import Map from 'can/map/';
+    import 'can/map/define/';
+
+    export default Map.extend({
+      define: {
+        message: {
+          value: 'This is the app-header component'
+        }
+      }
+    });
+  </script>
+</can-component>
